@@ -82,23 +82,16 @@ attainable."
 </div>
 
 
-<div class="p-8 text-white border-b border-neutral-500 hover:bg-primary-300 hover:bg-opacity-10 transition duration-200">
-  <div class="mx-auto px-4 py-2 w-full sm:px-6 lg:px-8 md:flex items-center">
-    <h3 class="font-bold my-2 text-2xl tracking-wider flex-grow">Want to see some of my videos to see my skill and
-      style?</h3>
-      <a href="https://youtube.com/devmentorlive"
-      class="hover:scale-110 hover:bg-prmary-500 transition duration-200 whitespace-nowrap inline-flex w-full items-center justify-center shadow drop-shadow-lg bg-primary-700 px-5 py-3 text-base font-medium text-neutral-200 sm:w-auto">Watch
-      on Youtube</a><br> 
-  </div>
-</div>
 
 <div class="gap-8 md:flex  items-center">
   <div class="w-full md:w-1/2">
     <div class="w-[400px] mx-auto ">
     <div class=" flex justify-center ">
-      <img src="/headshot.png" class="max-w-[200px]" alt="Marcus Tellez - Expert ReactJS Mentor">
+      <a class="cursor-pointer" href="https://www.youtube.com/watch?v=lTLs0izq0hQ" target="_blank">
+        <img src="/intro.jpg" class="max-h-[200px]" alt="Marcus Tellez - Expert ReactJS Mentor">
+      </a>
     </div>
-    <div class="flex items-center gap-3 justify-center w-full my-4">
+    <div class="flex items-center gap-3 justify-center w-full">
       <div>5.0</div>
       <div class="flex text-primary-500 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
           viewBox="0 0 24 24">
@@ -151,7 +144,7 @@ I offer a **_Money back guarantee_** on your first lesson if you aren't complete
 {{</lead>}}
 <div class="w-full flex justify-end">
       <button class="hover:scale-110 hover:bg-prmary-500 transition duration-200  bg-primary-700 rounded px-4 py-2 w-full">
-        <a target="_blank" class="text-primary-100 " href="https://calendly.com/aipaired/mentorship-1hr">Book a mentorship
+        <a target="_blank" class="text-primary-100 " href="https://calendly.com/devmentorlive/mentorship-1hr">Book a mentorship
           session for $80 usd</a>
       </button>
     </div>
