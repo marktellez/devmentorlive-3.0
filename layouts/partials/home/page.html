@@ -1,11 +1,11 @@
-<article class="max-w-full prose dark:prose-invert">
-  {{ with .Title }}
-    <header>
-      <h1>{{ . | emojify }}</h1>
-    </header>
-  {{ end }}
+<section class="prose max-w-full dark:prose-invert">
+  <header>
+    <h1>
+      {{ if isset .Params "h1" }} {{.Params.H1 | emojify}} {{else}} {{ .Title |
+      emojify }} {{end}}
+    </h1>
+  </header>
+
   <section>{{ .Content | emojify }}</section>
-</article>
-<section>
-  {{ partial "recent-articles/main.html" . }}
 </section>
+<section>{{ partial "recent-articles/main.html" . }}</section>

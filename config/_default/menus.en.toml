@@ -14,76 +14,56 @@
   name = "Home"
   pageRef = "/"
   weight = 10
-  
- [[main]]
-  name = "Consulting"
-  pageRef = "/web-development-consulting"
-  weight = 15
-  
- [[main]]
-  name = "About Me"
-  pageRef = "/about"
+
+
+[[main]]
+  name = "About"
+  pageRef = "/authors/marcustellez/"
   weight = 20
 
-[[main]]
-  name = "Reviews"
-  pageRef = "/reviews"
-  weight = 25
+#[[main]]
+#  name = "Blog"
+#  pageRef = "/blog/"
+#  weight = 25
 
 [[main]]
-  name = "Hire"
-  pageRef = "/hire"
+  name = "Testimonals"
+  pageRef = "testimonials"
   weight = 30
-  
-#[[main]]
-#  name = "Parent"
-#  weight = 20
 
 #[[main]]
-#  name = "example sub-menu 1"
-#  parent = "Parent"
-#  pageRef = "posts"
-#  weight = 20
+#  name = "Hire me"
+#  pageRef = "/hire/"
+#  weight = 35
 
-#[[main]]
-#  name = "example sub-menu 2"
-#  parent = "Parent"
-#  pageRef = "posts"
-#  weight = 20
+[[main]]
+  name = "Contact"
+  url = "mailto:mark@devmentor.live"
+  weight = 40
 
-#[[subnavigation]]
-#  name = "An interesting topic"
-#  pageRef = "tags/interesting-topic"
-#  weight = 10
+[[main]]
+  identifier = "twitter"
+  pre = "twitter"
+  url = "https://twitter.com/devmentorlive"
+  weight = 60
 
-#[[subnavigation]]
-#  name = "My Awesome Category"
-#  pre = "github"
-#  pageRef = "categories/awesome"
-#  weight = 20
-
-#[[main]]
-#  name = "Categories"
-#  pageRef = "categories"
-#  weight = 20
-
-#[[main]]
-#  name = "Tags"
-#  pageRef = "tags"
-#  weight = 30
+[[main]]
+  identifier = "linkedin"
+  pre = "linkedin"
+  url = "https://www.linkedin.com/company/devmentorlive"
+  weight = 80
 
 
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
 # the copyright notice. Configure as per the main menu above.
 
+ #[[footer]]
+ #  name = "Tags"
+ #  pageRef = "tags"
+ #  weight = 10
 
-# [[footer]]
-#   name = "Tags"
-#   pageRef = "tags"
-#   weight = 10
-
-# [[footer]]
-#   name = "Categories"
-#   pageRef = "categories"
-#   weight = 20
+ #[[footer]]
+ #  name = "Authors"
+ #  pageRef = "authors"
+ #  weight = 20

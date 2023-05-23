@@ -26,19 +26,16 @@ window.addEventListener("DOMContentLoaded", (event) => {
   const switcher = document.getElementById("appearance-switcher");
   const switcherMobile = document.getElementById("appearance-switcher-mobile");
 
-  updateMeta();
-  this.updateLogo?.(getTargetAppearance());
+  updateMeta()
 
   if (switcher) {
     switcher.addEventListener("click", () => {
       document.documentElement.classList.toggle("dark");
-      var targetAppearance = getTargetAppearance();
       localStorage.setItem(
         "appearance",
-        targetAppearance
+        document.documentElement.classList.contains("dark") ? "dark" : "light"
       );
-      updateMeta();
-      this.updateLogo?.(targetAppearance);
+      updateMeta()
     });
     switcher.addEventListener("contextmenu", (event) => {
       event.preventDefault();
@@ -48,13 +45,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
   if (switcherMobile) {
     switcherMobile.addEventListener("click", () => {
       document.documentElement.classList.toggle("dark");
-      var targetAppearance = getTargetAppearance();
       localStorage.setItem(
         "appearance",
-        targetAppearance
+        document.documentElement.classList.contains("dark") ? "dark" : "light"
       );
-      updateMeta();
-      this.updateLogo?.(targetAppearance);
+      updateMeta()
     });
     switcherMobile.addEventListener("contextmenu", (event) => {
       event.preventDefault();
@@ -70,32 +65,3 @@ var updateMeta = () => {
   style = getComputedStyle(elem);
   document.querySelector('meta[name="theme-color"]').setAttribute('content', style.backgroundColor);
 }
-
-{{ if and (.Site.Params.Logo) (.Site.Params.SecondaryLogo) }}
-{{ $primaryLogo := resources.Get .Site.Params.Logo }}
-{{ $secondaryLogo := resources.Get .Site.Params.SecondaryLogo }}
-{{ if and ($primaryLogo) ($secondaryLogo) }}
-var updateLogo = (targetAppearance) => {
-  var elems;
-  elems = document.querySelectorAll("img.logo")
-  targetLogoPath = 
-    targetAppearance == "{{ .Site.Params.DefaultAppearance }}" ?
-    "{{ $primaryLogo.RelPermalink }}" : "{{ $secondaryLogo.RelPermalink }}"
-  for (const elem of elems) {
-    elem.setAttribute("src", targetLogoPath)
-  }
-}
-{{ end }}
-{{- end }}
-
-var getTargetAppearance = () => {
-  return document.documentElement.classList.contains("dark") ? "dark" : "light"
-}
-
-window.addEventListener("DOMContentLoaded", (event) => {
-  const scroller = document.getElementById("top-scroller");
-  const footer = document.getElementById("site-footer");
-  if(scroller.getBoundingClientRect().top > footer.getBoundingClientRect().top) {
-    scroller.hidden = true;
-  }
-});

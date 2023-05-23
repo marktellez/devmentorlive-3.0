@@ -1,7 +1,16 @@
 global:
-  language: "🇪🇸"
+  language: "ES"
+  reading_in: "Leyendo en"
+  show_more: "Mostrar más"
+  prompt:
+    example: "Ejemplo"
+    response: "Respuesta"
+
+twitter:
+  comment_now: "Consulta lo que otros están diciendo o deja tu propio comentario ahora!"
 
 article:
+  table_of_contents: "Tabla de contenidos"
   anchor_label: "Ancla"
   date: "{{ .Date }}"
   date_updated: "Actualizado: {{ .Date }}"
@@ -18,7 +27,6 @@ article:
   part_of_series: "Este artículo es parte de una serie."
   part: "Parte"
   this_article: "Este artículo"
-  related_articles: "Related"
 
 author:
   byline_title: "Autor"
@@ -35,7 +43,7 @@ error:
 footer:
   dark_appearance: "Cambiar a modo oscuro"
   light_appearance: "Cambiar a modo claro"
-  powered_by: "Desarrollada con {{ .Hugo }} &amp; {{ .Theme }}"
+  powered_by: "Desarrollada con la inteligencia artificial y la creatividad humana"
 
 list:
   externalurl_title: "Link a página externa"

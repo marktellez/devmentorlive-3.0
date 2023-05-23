@@ -1,0 +1,18 @@
+- Copiar el archivo index.en.md de el folder corecto para el articulo.
+- pega en el foder correcto de el articulo
+  - El archivo sera nombrado index.en copy.md
+- Renombra el archivo a index.es.md
+- Cierra index.en.md
+- Traducir las llaves entre (---)
+- Traducir seccion por seccion (#...)
+- Los enlases se ven así [texto visible](ur)
+  - Traduce solo el texto dentro de las []
+  - Asegurate de que no excistan espacios entre las []()
+  - No cambies nada dentro de los ()
+- Las imagenes aparecen así ![texto](ur)
+  - Las mismas reglas de (enlaces)
+- No cambies ningun caracter especial
+- Cuando el articulo este traducido asegurate de que este guardado
+- En el "terminal"
+  - preciona starus
+  - Asegurate de que el unico cambio que veas es index.es.md

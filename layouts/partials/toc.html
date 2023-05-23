@@ -1,25 +1,24 @@
-<details open class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+<details
+  open
+  class="mt-0 hidden overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:block"
+>
   <summary
-    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    class="block cursor-pointer bg-neutral-100 py-1 text-lg font-semibold text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden"
+  >
+    {{ i18n "article.table_of_contents" }}
+  </summary>
+  <summary
+    class="text-lg font-semibold text-neutral-800 dark:text-neutral-100 list-none"
+  >
     {{ i18n "article.table_of_contents" }}
   </summary>
   <div
-    class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    class="min-w-[220px] border-dotted border-neutral-300 py-2 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600"
+  >
     {{ .TableOfContents | emojify }}
   </div>
 </details>
-<details class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
-  <summary
-    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
-    {{ i18n "article.table_of_contents" }}
-  </summary>
-  <div
-    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
-    {{ .TableOfContents | emojify }}
-  </div>
-</details>
-
-{{ if .Site.Params.smartTOC }} 
+{{ if .Site.Params.smartTOC }}
 <script>
   (function () {
     var $toc = $('#TableOfContents');
@@ -36,25 +35,21 @@
             id = e.attr('id');
           }
         });
-        var active = $toc.find('a.active');      
+        var active = $toc.find('a.active');
         if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
 
-        active.each(function (i, e) {
-          {{ if .Site.Params.smartTOCHideUnfocusedChildren }} 
-            $(e).removeClass('active').siblings('ul').hide();
-          {{ else }}
-            $(e).removeClass('active');
-          {{ end }}
-        });
+
+
+        $toc.find('a').not('[href="#' + id + '"]').removeClass('active').siblings('ul').hide();
         $toc.find('a[href="#' + id + '"]').addClass('active')
         $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
-          $(e).children('a').parents('ul').show();          
+          $(e).children('a').parents('ul').show();
         });
       }
 
       $window.on('scroll', onScroll);
       $(document).ready(function () {
-        {{ if .Site.Params.smartTOCHideUnfocusedChildren }} 
+        {{ if .Site.Params.smartTOCHideUnfocusedChildren }}
           $toc.find('a').parent('li').find('ul').hide();
         {{ end }}
         onScroll();

@@ -3,34 +3,23 @@
     h-full
   {{ end }} flex flex-col items-center justify-center text-center"
 >
-  <header class="flex flex-col items-center mb-3">
-    {{ with .Site.Author.image }}
-      {{ $authorImage := resources.Get . }}
-      {{ if $authorImage }}
-        {{ $authorImage := $authorImage.Fill "288x288" }}
-        <img
-          class="mb-2 rounded-full h-36 w-36"
-          width="144"
-          height="144"
-          alt="{{ $.Site.Author.name | default "Author" }}"
-          src="{{ $authorImage.RelPermalink }}"
-        />
-      {{ end }}
-    {{ end }}
+  <header class="mb-3 flex flex-col items-center">
+    {{ with .Site.Author.image }} {{ $authorImage := resources.Get . }} {{ if
+    $authorImage }} {{ $authorImage := $authorImage.Fill "288x288" }} <img
+    class="mb-2 rounded-full h-36 w-36" width="144" height="144" alt="{{
+    $.Site.Author.name | default "Author" }}" src="{{ $authorImage.RelPermalink
+    }}" /> {{ end }} {{ end }}
     <h1 class="text-4xl font-extrabold">
-      {{ .Site.Author.name | default .Site.Title }}
+      {{ if isset .Params "h1" }} {{.Params.H1 | emojify}} {{else}} {{
+      .Site.Author.name | default .Site.Title }} {{end}}
     </h1>
     {{ with .Site.Author.headline }}
-      <h2 class="text-xl text-neutral-500 dark:text-neutral-400">
-        {{ . | markdownify | emojify }}
-      </h2>
+    <h2 class="text-xl text-neutral-500 dark:text-neutral-400">
+      {{ . | markdownify | emojify }}
+    </h2>
     {{ end }}
-    <div class="mt-1 text-2xl">
-      {{ partialCached "author-links.html" . }}
-    </div>
+    <div class="mt-1 text-2xl">{{ partialCached "author-links.html" . }}</div>
   </header>
   <section class="prose dark:prose-invert">{{ .Content | emojify }}</section>
 </article>
-<section>
-  {{ partial "recent-articles/main.html" . }}
-</section>
+<section>{{ partial "recent-articles/main.html" . }}</section>

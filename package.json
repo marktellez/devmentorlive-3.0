@@ -1,7 +1,8 @@
 {
-  "name": "hugo-blowfish-theme",
-  "version": "2.33.2",
-  "description": "Blowfish theme for Hugo",
+  "name": "gptforus-www",
+  "version": "2.32.1",
+  "description": "GPTForUS",
+  "private": true,
   "scripts": {
     "fullinstall": "npm run preinstall && npm install && npm run postinstall",
     "preinstall": "rimraf assets/vendor",
@@ -9,42 +10,29 @@
     "assets": "rimraf assets/vendor && vendor-copy",
     "dev": "NODE_ENV=development ./node_modules/tailwindcss/lib/cli.js -i ./assets/css/main.css -o ./assets/css/compiled/main.css --jit -w",
     "build": "NODE_ENV=production ./node_modules/tailwindcss/lib/cli.js -i ./assets/css/main.css -o ./assets/css/compiled/main.css --jit",
-    "build-hugo": "hugo --minify -s exampleSite --themesDir ../.. -d ../docs --baseURL https://nunocoracao.github.io/blowfish/",
+    "build-hugo": "hugo --minify --themesDir ../.. -d ../learn/ --baseURL https://gptfor.us/",
     "example": "hugo server -E -F --minify --source exampleSite --themesDir ../.. --buildDrafts -b http://localhost/ -p 1313",
     "lighthouse": "lhci autorun"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nunocoracao/blowfish.git"
-  },
-  "keywords": [
-    "hugo",
-    "hugo-theme",
-    "tailwind",
-    "dark-mode"
-  ],
   "author": {
-    "name": "Nuno Coração",
-    "github": "https://github.com/nunocoracao",
-    "url": "https://nunocoracao.com"
+    "name": "Marcus Tellez",
+    "github": "https://github.com/marktellez",
+    "url": "https://gptfor.us"
   },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/nunocoracao/blowfish/issues"
-  },
-  "homepage": "https://github.com/nunocoracao/blowfish#readme",
+  "homepage": "https://gptfor.us",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
-    "chart.js": "^4.3.0",
+    "chart.js": "^4.2.1",
     "fuse.js": "^6.6.2",
-    "jquery": "^3.7.0",
-    "katex": "^0.16.7",
+    "jquery": "^3.6.4",
+    "katex": "^0.16.6",
     "packery": "^2.1.2",
     "prettier": "^2.8.8",
     "prettier-plugin-go-template": "^0.0.13",
-    "prettier-plugin-tailwindcss": "^0.2.8",
+    "prettier-plugin-tailwindcss": "^0.2.7",
     "rimraf": "^5.0.0",
-    "tailwindcss": "^3.3.2",
+    "tailwindcss": "^3.3.1",
     "tw-elements": "1.0.0-beta2",
     "typeit": "^8.7.1",
     "vendor-copy": "^3.0.1"
@@ -94,8 +82,10 @@
   ],
   "dependencies": {
     "@headlessui/react": "^1.7.14",
-    "@heroicons/react": "^2.0.18",
+    "@heroicons/react": "^2.0.17",
     "@tailwindcss/forms": "^0.5.3",
-    "commander": "^10.0.1"
+    "commander": "^10.0.1",
+    "nodemon": "^2.0.22",
+    "zooming": "^2.1.1"
   }
 }

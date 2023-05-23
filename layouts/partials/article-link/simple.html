@@ -39,12 +39,13 @@
     {{- else -}}
     {{- $images := $.Resources.ByType "image" -}}
     {{- $featured := $images.GetMatch "*feature*" -}}
-    {{- if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
-    {{- if not $featured }}{{ with .Site.Params.defaultFeaturedImage }}{{ $featured = resources.Get . }}{{ end }}{{ end -}}
-    {{ if .Params.hideFeatureImage }}{{ $featured = false }}{{ end }}
+    {{- if not $featured }}
+    {{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}
+    {{ end -}}
     {{- with $featured -}}
     {{ if $disableImageOptimization }}
         {{ with . }}
+      
         <div class="{{ $articleImageClasses }}" style="background-image:url({{ .RelPermalink }});"></div>
         {{ end }}
       {{ else }}
@@ -54,7 +55,8 @@
       {{ end }}
     {{- else -}}
     {{- with $.Site.Params.images }}
-    <meta property="og:image" content="{{ index . 0 | absURL }}" />{{ end -}}
+    <meta property="og:image" content="{{ index . 0 | absURL }}" />
+    {{ end -}}
     {{- end -}}
     {{- end -}}
 

@@ -6,15 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   {{/* Title */}}
-  {{ if .IsHome -}}
-  <title>{{ .Site.Title | emojify }}</title>
-  <meta name="title" content="{{ .Site.Title | emojify }}" />
-  {{- else -}}
-  <title>{{ .Title | emojify }} &middot; {{ .Site.Title | emojify }}</title>
+  <title>{{ .Title | emojify }}</title>
   <meta name="title" content="{{ .Title | emojify }} &middot; {{ .Site.Title | emojify }}" />
-  {{- end }}
   {{/* Metadata */}}
-  {{ with (.Params.Summary | default .Params.Description) | default .Site.Params.description -}}
+  {{ with .Params.Summary | default .Site.Params.description -}}
   <meta name="description" content="{{ . }}" />
   {{- end }}
   {{ with  .Params.Tags | default .Site.Params.keywords -}}
@@ -34,9 +29,9 @@
   {{ end -}}
   {{/* Asset bundles */}}
   {{ $assets := newScratch }}
-  {{ $cssScheme := resources.Get (printf "css/schemes/%s.css" (.Site.Params.colorScheme | default "blowfish")) }}
+  {{ $cssScheme := resources.Get (printf "css/schemes/%s.css" (.Site.Params.colorScheme | default "devmentorlive")) }}
   {{ if not $cssScheme }}
-  {{ $cssScheme = resources.Get "css/schemes/blowfish.css" }}
+  {{ $cssScheme = resources.Get "css/schemes/devmentorlive.css" }}
   {{ end }}
   {{ $assets.Add "css" (slice $cssScheme) }}
   {{ $cssMain := resources.Get "css/compiled/main.css" }}
@@ -50,8 +45,8 @@
   <link type="text/css" rel="stylesheet" href="{{ $bundleCSS.RelPermalink }}"
     integrity="{{ $bundleCSS.Data.Integrity }}" />
   {{ $jsAppearance := resources.Get "js/appearance.js" }}
-  {{ $jsAppearance = $jsAppearance | resources.ExecuteAsTemplate $jsAppearance.RelPermalink . | resources.Minify | resources.Fingerprint "sha512" }}
-  <script type="text/javascript" src="{{ $jsAppearance.RelPermalink }}"
+  {{ $jsAppearance = $jsAppearance | resources.Minify | resources.Fingerprint "sha512" }}
+  <script  type="text/javascript" src="{{ $jsAppearance.RelPermalink }}"
     integrity="{{ $jsAppearance.Data.Integrity }}"></script>
   {{ if .Site.Params.enableSearch | default false }}
   {{ $jsFuse := resources.Get "lib/fuse/fuse.min.js" }}
@@ -69,19 +64,22 @@
   {{ if $assets.Get "js" }}
   {{ $bundleJS := $assets.Get "js" | resources.Concat "js/main.bundle.js" | resources.Minify | resources.Fingerprint
   "sha512" }}
-  <script defer type="text/javascript" id="script-bundle" src="{{ $bundleJS.RelPermalink }}"
+  <script  type="text/javascript" id="script-bundle" src="{{ $bundleJS.RelPermalink }}"
     integrity="{{ $bundleJS.Data.Integrity }}" data-copy="{{ i18n " code.copy" }}" data-copied="{{ i18n " code.copied"
     }}"></script>
   {{ end }}
-  <script src="{{ "js/zoom.min.js" | relURL }}"></script>
+  <script src="/js/zoom.min.js"></script>
+
+
   {{/* Icons */}}
   {{ if templates.Exists "partials/favicons.html" }}
   {{ partialCached "favicons.html" .Site }}
   {{ else }}
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}" />
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}" />
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | relURL }}" />
-  <link rel="manifest" href="{{ "site.webmanifest" | relURL }}" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
   {{ end }}
   {{/* Site Verification */}}
   {{ with .Site.Params.verification.google }}
@@ -92,6 +90,10 @@
   {{ end }}
   {{ with .Site.Params.verification.pinterest }}
   <meta name="p:domain_verify" content="{{ . }}" />
+  {{ end }}
+  {{ with .Site.Params.verification.norton }}
+  <meta name="norton-safeweb-site-verification" content="{{ . }}" />
+
   {{ end }}
   {{ with .Site.Params.verification.yandex }}
   <meta name="yandex-verification" content="{{ . }}" />
@@ -144,4 +146,5 @@
   </script>
   {{ end }}
   {{ end }}
+
 </head>

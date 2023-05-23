@@ -1,0 +1,7 @@
+{{ $filename := .Get "image" }}
+{{ $extension := path.Ext $filename }}
+{{ $dir := .Page.File.Dir }}
+
+<img class="my-0 rounded-md hidden sm-visible" src="{{ printf "/%s%s" $dir (replace $filename $extension (printf "-landscape%s" $extension)) }}" alt="{{.Get "image"}}" width="800px" height="449px">
+
+<img class="my-0 rounded-md sm-hidden" src="{{ printf "/%s%s" $dir (replace $filename $extension (printf "-portrait%s" $extension)) }}" alt="{{.Get "image"}}" width="800px" height="449px">

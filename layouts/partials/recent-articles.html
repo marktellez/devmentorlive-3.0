@@ -1,0 +1,35 @@
+{{ $recentArticles := 5 }} {{ $showMoreLinkDest := "/posts" }} {{ if index
+.Site.Params.homepage "showRecentItems" }} {{ $recentArticles =
+.Site.Params.homepage.showRecentItems }} {{ end }}
+{{.Site.Params.homepage }}
+<div id="recent-articles" class="mb-8">&nbsp;</div>
+
+<h2 class="mb-10 mt-8 text-2xl font-extrabold">
+  {{ i18n "shortcode.recent_articles" | emojify }}
+</h2>
+
+<div id="CardViewScreenWidth" class="">
+  {{ partial "recent-articles/cardview-fullwidth.html" . }}
+</div>
+
+<div id="CardViewProse" class="hidden h-full">
+  {{ partial "recent-articles/cardview.html" . }}
+</div>
+
+<div id="NormalView" class="hidden h-full">
+  {{ partial "recent-articles/list.html" . }}
+</div>
+
+{{ if .Site.Params.homepage.showMoreLink | default false }} {{ if index
+.Site.Params.homepage "showRecentItems" }} {{ $showMoreLinkDest =
+.Site.Params.homepage.showMoreLinkDest }} {{ end }}
+<div class="mt-10 flex justify-center">
+  <a href="{{ $showMoreLinkDest }}">
+    <button
+      class="hover:text-white prose rounded border border-primary-500 bg-transparent px-4 py-2 font-semibold dark:prose-invert hover:border-transparent hover:text-primary-500"
+    >
+      {{- i18n "global.show_more" | markdownify | emojify -}}
+    </button>
+  </a>
+</div>
+{{ end }}

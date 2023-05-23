@@ -2,18 +2,16 @@ module.exports = {
   content: [
     "./layouts/**/*.html",
     "./content/**/*.{html,md}",
-    "./themes/blowfish/layouts/**/*.html",
-    "./themes/blowfish/content/**/*.{html,md}",
-    "./node_modules/tw-elements/dist/js/**/*.js"
+    "./node_modules/tw-elements/dist/js/**/*.js",
   ],
   darkMode: "class",
   theme: {
     screens: {
-      'sm': '640px',
-      'md': '853px',
-      'lg': '1024px',
-      'xl': '1280px',
-      '2xl': '1536px',
+      sm: "640px",
+      md: "853px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
     },
     colors: {
       transparent: "transparent",
@@ -62,7 +60,7 @@ module.exports = {
             "--tw-prose-body": theme("colors.neutral.700 / 1"),
             "--tw-prose-headings": theme("colors.neutral.800 / 1"),
             "--tw-prose-lead": theme("colors.neutral.500 / 1"),
-            "--tw-prose-links": theme("colors.primary.600 / 1"),
+            "--tw-prose-links": theme("colors.primary.700 / 1"),
             "--tw-prose-bold": theme("colors.neutral.900 / 1"),
             "--tw-prose-counters": theme("colors.neutral.800 / 1"),
             "--tw-prose-bullets": theme("colors.neutral.500 / 1"),
@@ -96,7 +94,7 @@ module.exports = {
               textDecorationColor: theme("colors.primary.300 / 1"),
               fontWeight: "500",
               "&:hover": {
-                color: theme("colors.primary.600 / 1"),
+                color: theme("colors.neutral.DEFAULT / 1"),
                 textDecoration: "none",
                 borderRadius: "0.09rem",
               },
@@ -117,7 +115,7 @@ module.exports = {
               padding: "0.1rem 0.2rem",
               borderRadius: "0.25rem",
             },
-            code:{
+            code: {
               backgroundColor: theme("colors.neutral.50 / 1"),
               paddingTop: "3px",
               paddingBottom: "3px",
@@ -125,33 +123,30 @@ module.exports = {
               paddingRight: "5px",
               borderRadius: "0.25rem",
             },
-            'code::before': {
-              display: 'none'
+            "code::before": {
+              display: "none",
             },
-            'code::after': {
-              display: 'none'
+            "code::after": {
+              display: "none",
             },
-            'p::before': {
-              display: 'none'
+            "p::before": {
+              display: "none",
             },
-            'p::after': {
-              display: 'none'
+            "p::after": {
+              display: "none",
             },
-            'a.active': {
+            "a.active": {
               "text-decoration-color": theme("colors.primary.600 / 1"),
             },
-            'p.active': {
+            "p.active": {
               "text-decoration-color": theme("colors.primary.600 / 1"),
-            }
+            },
           },
         },
         invert: {
           css: {
             a: {
               textDecorationColor: theme("colors.neutral.600 / 1"),
-              "&:hover": {
-                color: theme("colors.primary.400 / 1"),
-              },
             },
             kbd: {
               color: theme("colors.neutral.200 / 1"),
@@ -160,22 +155,22 @@ module.exports = {
             mark: {
               backgroundColor: theme("colors.primary.400 / 1"),
             },
-            code:{
+            code: {
               backgroundColor: theme("colors.neutral.700 / 1"),
             },
-            'a.active': {
-              "text-decoration-color": theme("colors.primary.400 / 1")
+            "a.active": {
+              "text-decoration-color": theme("colors.primary.400 / 1"),
             },
-            'p.active': {
-              "text-decoration-color": theme("colors.primary.400 / 1")
-            }
+            "p.active": {
+              "text-decoration-color": theme("colors.primary.400 / 1"),
+            },
           },
         },
       }),
+      animation: {
+        "bounce-short": "bounce 300 ease-in-out 5",
+      },
     },
   },
-  plugins: [
-    require("@tailwindcss/typography"),
-    require('@tailwindcss/forms'),
-  ],
+  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
 };
