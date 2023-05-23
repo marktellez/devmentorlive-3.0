@@ -1,9 +1,8 @@
 ---
 title: "Learn Web Development and JavaScript from an Expert Mentor"
 h1: "Learn ReactJS, NextJS, MongoDB and JavaScript from an Expert Developer"
-summary: "JavaScript moves fast. So does web development, but with the help of an Expert Mentor and Sr. Developer, it is
-attainable."
-
+summary: "JavaScript moves fast. So does web development, but with the help of an Expert Mentor and Sr. Developer, you CAN learn this subject!"
+description: "Get Mentored by an Expert Web Developer with 10 years experience in mentoring aspiring developers."
 ---
 
 {{<lead>}}
@@ -107,12 +106,11 @@ attainable."
 {{<lead>}}
 Book your first session now. 
 
-I offer a **_Money back guarantee_** on your first lesson if you aren't completely happy with my help.
+I offer a **_money back guarantee_** on your first lesson if you aren't completely happy with my help.
 {{</lead>}}
 <div class="w-full flex justify-end">
-      <button class="hover:scale-110 hover:bg-prmary-500 transition duration-200  bg-primary-700 rounded px-4 py-2 w-full">
-        <a target="_blank" class="text-primary-100 " href="https://calendly.com/devmentorlive/mentorship-1hr">Book a mentorship
-          session for $80 usd</a>
+      <button class="hover:scale-110 hover:bg-primary-500 transition duration-200  bg-primary-700 rounded px-4 py-2 w-full">
+        <a target="_blank" class="text-primary-100 " href="https://calendly.com/devmentorlive/mentorship-1hr">Book a mentorship session for $80 usd</a>
       </button>
     </div>
   </div>
