@@ -8,7 +8,7 @@ default false)) (in .TableOfContents "<ul") }}
 <header>
   {{ if .Params.showBreadcrumbs | default (.Site.Params.list.showBreadcrumbs |
   default false) }} {{ partial "breadcrumbs.html" . }} {{ end }}
-  <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+  <h1 class="max-w-3xl mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
     {{ if isset .Params "h1" }} {{.Params.H1 | emojify}} {{else}} {{ .Title |
     emojify }} {{end}}
   </h1>
