@@ -93,43 +93,9 @@ attainable."
     </div>
     <div class="flex items-center gap-3 justify-center w-full">
       <div>5.0</div>
-      <div class="flex text-primary-500 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-          viewBox="0 0 24 24">
-          <g fill="none" fill-rule="evenodd">
-            <path d="M0 0h24v24H0z"></path>
-            <path fill="currentColor" fill-rule="nonzero"
-              d="M13.2 2.7l2.3 5 5.4.8c1 .2 1.5 1.4.7 2.2l-3.9 4.1.9 5.7c.2 1.1-1 1.9-1.9 1.3L12 19.2l-4.7 2.6c-.9.5-2.1-.3-1.9-1.3l.9-5.7-3.9-4.1c-.7-.8-.3-2 .7-2.2l5.4-.8 2.3-5c.5-.9 1.9-.9 2.4 0z">
-            </path>
-          </g>
-        </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <g fill="none" fill-rule="evenodd">
-            <path d="M0 0h24v24H0z"></path>
-            <path fill="currentColor" fill-rule="nonzero"
-              d="M13.2 2.7l2.3 5 5.4.8c1 .2 1.5 1.4.7 2.2l-3.9 4.1.9 5.7c.2 1.1-1 1.9-1.9 1.3L12 19.2l-4.7 2.6c-.9.5-2.1-.3-1.9-1.3l.9-5.7-3.9-4.1c-.7-.8-.3-2 .7-2.2l5.4-.8 2.3-5c.5-.9 1.9-.9 2.4 0z">
-            </path>
-          </g>
-        </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <g fill="none" fill-rule="evenodd">
-            <path d="M0 0h24v24H0z"></path>
-            <path fill="currentColor" fill-rule="nonzero"
-              d="M13.2 2.7l2.3 5 5.4.8c1 .2 1.5 1.4.7 2.2l-3.9 4.1.9 5.7c.2 1.1-1 1.9-1.9 1.3L12 19.2l-4.7 2.6c-.9.5-2.1-.3-1.9-1.3l.9-5.7-3.9-4.1c-.7-.8-.3-2 .7-2.2l5.4-.8 2.3-5c.5-.9 1.9-.9 2.4 0z">
-            </path>
-          </g>
-        </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <g fill="none" fill-rule="evenodd">
-            <path d="M0 0h24v24H0z"></path>
-            <path fill="currentColor" fill-rule="nonzero"
-              d="M13.2 2.7l2.3 5 5.4.8c1 .2 1.5 1.4.7 2.2l-3.9 4.1.9 5.7c.2 1.1-1 1.9-1.9 1.3L12 19.2l-4.7 2.6c-.9.5-2.1-.3-1.9-1.3l.9-5.7-3.9-4.1c-.7-.8-.3-2 .7-2.2l5.4-.8 2.3-5c.5-.9 1.9-.9 2.4 0z">
-            </path>
-          </g>
-        </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <g fill="none" fill-rule="evenodd">
-            <path d="M0 0h24v24H0z"></path>
-            <path fill="currentColor" fill-rule="nonzero"
-              d="M13.2 2.7l2.3 5 5.4.8c1 .2 1.5 1.4.7 2.2l-3.9 4.1.9 5.7c.2 1.1-1 1.9-1.9 1.3L12 19.2l-4.7 2.6c-.9.5-2.1-.3-1.9-1.3l.9-5.7-3.9-4.1c-.7-.8-.3-2 .7-2.2l5.4-.8 2.3-5c.5-.9 1.9-.9 2.4 0z">
-            </path>
-          </g>
-        </svg></div><span>(453 reviews)</span>
+      <div class="flex text-primary-500 items-center">
+        {{% star %}}{{% star %}}{{% star %}}{{% star %}}{{% star %}}
+        </div><span>(453 reviews)</span>
     </div>
     <p class="text-center">You can <span class="font-bold italic">verify these reviews</span> at <a href="https://www.codementor.io/@marktellez">Codementor.io</a> where I helped over a thousand people <span class="font-bold italic">just like you</span>!</p>
     </div></div>
@@ -200,3 +166,6 @@ This is a **_custom learning experience_** based on **_expert mentorship_** and 
     </dl>
   </div>
 </div>
+
+{{%reviewld%}}
+
