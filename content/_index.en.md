@@ -88,7 +88,7 @@ attainable."
     <div class="w-[400px] mx-auto ">
     <div class=" flex justify-center ">
       <a class="cursor-pointer" href="https://www.youtube.com/watch?v=lTLs0izq0hQ" target="_blank">
-        <img src="/intro.jpg" class="max-h-[200px]" alt="Marcus Tellez - Expert ReactJS Mentor">
+        <img src="/intro.webp" class="max-h-[200px]" alt="Marcus Tellez - Expert ReactJS Mentor">
       </a>
     </div>
     <div class="flex items-center gap-3 justify-center w-full">
