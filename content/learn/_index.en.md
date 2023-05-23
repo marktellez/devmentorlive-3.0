@@ -1,7 +1,7 @@
 ---
 title: "Articles on NextJS, ReactJS, MongoDB, and AI-Assisted Development"
 h1: "Learn Web Development 3.0 from an Expert Developer and Mentor"
-summary: ""
+summary: "Articles and how-tos on the latest best practices and techniques in React, NextJS, and JavaScript"
 exclude_from_sitemap: false
 cascade:
   showDate: false
