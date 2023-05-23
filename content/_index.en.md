@@ -28,9 +28,36 @@ attainable."
 
   I would _**love**_ to be your _**secret weapon**_ in your journey to become a _**successful programmer**_ and to help
   you master the _craft_!
-  {{</lead>}}
+{{</lead>}}
 
-
+<h2 class="uppercase font-black w-full text-center">Find me on the web</h2>
+<div class="flex items-center flex-wrap my-3 justify-center gap-2">
+  <a href="https://github.com/marktellez" target="_blank" class="cursor-pointer hover:border-primary-300 border-b-2 border-transparent hover:text-primary-300 text-neutral-300 transition duration-200 whitespace-nowrap flex gap-2 w-full items-center justify-center px-5 pt-3 text-base font-medium sm:w-auto">
+    <span class="mb-1 icon">{{% icon  "github" %}}</span>
+    Github
+  </a>
+  <a href="https://youtube.com/devmentorlive" target="_blank" class="cursor-pointer hover:border-primary-300 border-b-2 border-transparent hover:text-primary-300 text-neutral-300 transition duration-200 whitespace-nowrap flex gap-2 w-full items-center justify-center px-5 pt-3 text-base font-medium sm:w-auto">
+    <span class="mb-1 icon">{{% icon  "youtube" %}}</span>
+    Youtube
+  </a>
+  <a href="https://twitter.com/devmentorlive" target="_blank" class="cursor-pointer hover:border-primary-300 border-b-2 border-transparent hover:text-primary-300 text-neutral-300 transition duration-200 whitespace-nowrap flex gap-2 w-full items-center justify-center px-5 pt-3 text-base font-medium sm:w-auto">
+    <span class="mb-1 icon">{{% icon  "twitter" %}}</span>
+    Twitter
+  </a>
+  <a href="https://medium.com/@devmentorlive" target="_blank" class="cursor-pointer hover:border-primary-300 border-b-2 border-transparent hover:text-primary-300 text-neutral-300 transition duration-200 whitespace-nowrap flex gap-2 w-full items-center justify-center px-5 pt-3 text-base font-medium sm:w-auto">
+    <span class="mb-1 icon">{{% icon  "medium" %}}</span>
+    Medium
+  </a>
+  <a href="https://codementor.io/@devmentorlive" target="_blank" class="cursor-pointer hover:border-primary-300 border-b-2 border-transparent hover:text-primary-300 text-neutral-300 transition duration-200 whitespace-nowrap flex gap-2 w-full items-center justify-center px-5 pt-3 text-base font-medium sm:w-auto">
+    <span class="mb-1 icon">{{% icon  "code" %}}</span>
+    Codementor
+  </a>
+  <a href="https://www.linkedin.com/in/marcus-tellez-9285991bb/" target="_blank" class="cursor-pointer hover:border-primary-300 border-b-2 border-transparent hover:text-primary-300 text-neutral-300 transition duration-200 whitespace-nowrap flex gap-2 w-full items-center justify-center px-5 pt-3 text-base font-medium sm:w-auto">
+    <span class="mb-1 icon">{{% icon  "linkedin" %}}</span>
+    LinkIn
+  </a>
+</div>
+  
 <div class="bg-primary-500 bg-opacity-10   py-4 my-8">
   <div class="mx-auto max-w-4xl text-center">
     <h3 class="uppercase text-3xl font-bold tracking-tight  sm:text-4xl">I have mentored hundreds of programmers</h3>
@@ -54,17 +81,15 @@ attainable."
   </dl>
 </div>
 
-<div class="border-primary-600 p-8 text-white ">
+
+<div class="p-8 text-white border-b border-neutral-500 hover:bg-primary-300 hover:bg-opacity-10 transition duration-200">
   <div class="mx-auto px-4 py-2 w-full sm:px-6 lg:px-8 md:flex items-center">
     <h3 class="font-bold my-2 text-2xl tracking-wider flex-grow">Want to see some of my videos to see my skill and
       style?</h3>
       <a href="https://youtube.com/devmentorlive"
-      class="whitespace-nowrap inline-flex w-full items-center justify-center shadow drop-shadow-lg bg-primary-700 px-5 py-3 text-base font-medium  hover:bg-primary-500 text-neutral-200 sm:w-auto">Watch
-      on Youtube</a><br>
-      
+      class="hover:scale-110 hover:bg-prmary-500 transition duration-200 whitespace-nowrap inline-flex w-full items-center justify-center shadow drop-shadow-lg bg-primary-700 px-5 py-3 text-base font-medium text-neutral-200 sm:w-auto">Watch
+      on Youtube</a><br> 
   </div>
-  <div class="flex justify-end mr-9">You can also browse &nbsp;<a class="text-primary-400 hover:text-primary-500 hover:underline" href="https://github.com/marktellez">my github</a></div>
-
 </div>
 
 <div class="gap-8 md:flex  items-center">
@@ -120,13 +145,14 @@ attainable."
     <h4 class="mt-0 uppercase font-black text-lg">Ready to take action?</h4>
    
 {{<lead>}}
-Book your first session now.
+Book your first session now. 
+
 I offer a **_Money back guarantee_** on your first lesson if you aren't completely happy with my help.
 {{</lead>}}
 <div class="w-full flex justify-end">
-      <button class="animate-bounce bg-primary-700 rounded px-4 py-2 w-full hover:bg-prmary-500i">
-        <a target="_blank" class="text-primary-100 " href="https://calendly.com/aipaired/mentorship-1hr">Book an hour now
-          for $80 usd</a>
+      <button class="hover:scale-110 hover:bg-prmary-500 transition duration-200  bg-primary-700 rounded px-4 py-2 w-full">
+        <a target="_blank" class="text-primary-100 " href="https://calendly.com/aipaired/mentorship-1hr">Book a mentorship
+          session for $80 usd</a>
       </button>
     </div>
   </div>

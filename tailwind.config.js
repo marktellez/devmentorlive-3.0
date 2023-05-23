@@ -54,6 +54,9 @@ module.exports = {
       },
     },
     extend: {
+      animation: {
+        "bounce-short": "bounce 300 ease-in-out 10",
+      },
       typography: ({ theme }) => ({
         DEFAULT: {
           css: {
@@ -167,10 +170,9 @@ module.exports = {
           },
         },
       }),
-      animation: {
-        "bounce-short": "bounce 300 ease-in-out 5",
-      },
+      
     },
+   
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
 };

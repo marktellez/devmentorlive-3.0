@@ -21,10 +21,10 @@
   pageRef = "/authors/marcustellez/"
   weight = 20
 
-#[[main]]
-#  name = "Blog"
-#  pageRef = "/blog/"
-#  weight = 25
+[[main]]
+  name = "Learn"
+  pageRef = "/learn/"
+  weight = 25
 
 [[main]]
   name = "Testimonals"
@@ -58,7 +58,6 @@
   pre = "linkedin"
   url = "https://www.linkedin.com/company/devmentorlive"
   weight = 70
-
 
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before

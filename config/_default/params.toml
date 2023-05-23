@@ -2,12 +2,10 @@ colorScheme = "gptforus"
 defaultAppearance = "dark" # valid options: light or dark
 autoSwitchAppearance = false
 
-enableSearch = true
+enableSearch = false
 enableCodeCopy = true
 env= "production"
 mainSections = ["learn"]
-# robots = ""
-
 disableImageOptimization = false
 
 defaultBackgroundImage = "/img/bg.jpg"
