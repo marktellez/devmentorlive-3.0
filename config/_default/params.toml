@@ -7,7 +7,6 @@ enableCodeCopy = true
 env= "production"
 mainSections = ["learn"]
 disableImageOptimization = false
-
 defaultBackgroundImage = "img/bg.webp"
 
 highlightCurrentMenuArea = true

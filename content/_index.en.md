@@ -31,32 +31,33 @@ attainable."
 {{</lead>}}
 
 <h2 class="uppercase font-black w-full text-center">Find me on the web</h2>
-<div class="flex items-center flex-wrap my-3 justify-center gap-2">
-  <a href="https://github.com/marktellez" target="_blank" class="cursor-pointer hover:border-primary-300 border-b-2 border-transparent hover:text-primary-300 text-neutral-300 transition duration-200 whitespace-nowrap flex gap-2 w-full items-center justify-center px-5 pt-3 text-base font-medium sm:w-auto">
+<div class="flex flex-wrap my-3 justify-center gap-2">
+  <a href="https://github.com/marktellez" target="_blank" class="cursor-pointer hover:border-primary-300 border-b-2 border-transparent hover:text-primary-300 text-neutral-300 transition duration-200 whitespace-nowrap flex gap-2 items-center justify-center px-5 pt-3 text-base font-medium">
     <span class="mb-1 icon">{{% icon  "github" %}}</span>
     Github
   </a>
-  <a href="https://youtube.com/devmentorlive" target="_blank" class="cursor-pointer hover:border-primary-300 border-b-2 border-transparent hover:text-primary-300 text-neutral-300 transition duration-200 whitespace-nowrap flex gap-2 w-full items-center justify-center px-5 pt-3 text-base font-medium sm:w-auto">
+  <a href="https://youtube.com/devmentorlive" target="_blank" class="cursor-pointer hover:border-primary-300 border-b-2 border-transparent hover:text-primary-300 text-neutral-300 transition duration-200 whitespace-nowrap flex gap-2 items-center justify-center px-5 pt-3 text-base font-medium">
     <span class="mb-1 icon">{{% icon  "youtube" %}}</span>
     Youtube
   </a>
-  <a href="https://twitter.com/devmentorlive" target="_blank" class="cursor-pointer hover:border-primary-300 border-b-2 border-transparent hover:text-primary-300 text-neutral-300 transition duration-200 whitespace-nowrap flex gap-2 w-full items-center justify-center px-5 pt-3 text-base font-medium sm:w-auto">
+  <a href="https://twitter.com/devmentorlive" target="_blank" class="cursor-pointer hover:border-primary-300 border-b-2 border-transparent hover:text-primary-300 text-neutral-300 transition duration-200 whitespace-nowrap flex gap-2 items-center justify-center px-5 pt-3 text-base font-medium">
     <span class="mb-1 icon">{{% icon  "twitter" %}}</span>
     Twitter
   </a>
-  <a href="https://medium.com/@devmentorlive" target="_blank" class="cursor-pointer hover:border-primary-300 border-b-2 border-transparent hover:text-primary-300 text-neutral-300 transition duration-200 whitespace-nowrap flex gap-2 w-full items-center justify-center px-5 pt-3 text-base font-medium sm:w-auto">
+  <a href="https://medium.com/@devmentorlive" target="_blank" class="cursor-pointer hover:border-primary-300 border-b-2 border-transparent hover:text-primary-300 text-neutral-300 transition duration-200 whitespace-nowrap flex gap-2 items-center justify-center px-5 pt-3 text-base font-medium">
     <span class="mb-1 icon">{{% icon  "medium" %}}</span>
     Medium
   </a>
-  <a href="https://codementor.io/@devmentorlive" target="_blank" class="cursor-pointer hover:border-primary-300 border-b-2 border-transparent hover:text-primary-300 text-neutral-300 transition duration-200 whitespace-nowrap flex gap-2 w-full items-center justify-center px-5 pt-3 text-base font-medium sm:w-auto">
+  <a href="https://codementor.io/@devmentorlive" target="_blank" class="cursor-pointer hover:border-primary-300 border-b-2 border-transparent hover:text-primary-300 text-neutral-300 transition duration-200 whitespace-nowrap flex gap-2 items-center justify-center px-5 pt-3 text-base font-medium">
     <span class="mb-1 icon">{{% icon  "code" %}}</span>
     Codementor
   </a>
-  <a href="https://www.linkedin.com/in/marcus-tellez-9285991bb/" target="_blank" class="cursor-pointer hover:border-primary-300 border-b-2 border-transparent hover:text-primary-300 text-neutral-300 transition duration-200 whitespace-nowrap flex gap-2 w-full items-center justify-center px-5 pt-3 text-base font-medium sm:w-auto">
+  <a href="https://www.linkedin.com/in/marcus-tellez-9285991bb/" target="_blank" class="cursor-pointer hover:border-primary-300 border-b-2 border-transparent hover:text-primary-300 text-neutral-300 transition duration-200 whitespace-nowrap flex gap-2 items-center justify-center px-5 pt-3 text-base font-medium">
     <span class="mb-1 icon">{{% icon  "linkedin" %}}</span>
-    LinkIn
+    LinkedIn
   </a>
 </div>
+
   
 <div class="bg-primary-500 bg-opacity-10   py-4 my-8">
   <div class="mx-auto max-w-4xl text-center">

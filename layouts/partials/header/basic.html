@@ -85,10 +85,13 @@
             {{ partial "translations.html" . }}
         </div>
     </div>
-    <div class="-my-2 -mr-2 md:hidden">
-
+    <div class="-my-2 -mr-2 md:hidden flex items-center gap-3">
+        <button class="text-xs hover:scale-110 transition duration-200 bg-primary-700 rounded px-2 py-1 w-full hover:bg-prmary-500i">
+            <a target="_blank" class="text-primary-100 " href="https://calendly.com/devmentorlive/mentorship-1hr">Book now</a>
+          </button>
         <label id="menu-button" for="menu-controller" class="block">
             <input type="checkbox" id="menu-controller" class="hidden" />
+            
             <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
                 {{ partial "icon.html" "bars" }}
             </div>

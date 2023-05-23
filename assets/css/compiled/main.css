@@ -7135,6 +7135,14 @@ body:has(#menu-controller:checked) {
     flex-direction: row;
   }
 
+  .sm\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .sm\:justify-center {
+    justify-content: center;
+  }
+
   .sm\:gap-8 {
     gap: 2rem;
   }
@@ -7254,6 +7262,10 @@ body:has(#menu-controller:checked) {
   .md\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+
+  .md\:text-center {
+    text-align: center;
   }
 
   .md\:text-4xl {

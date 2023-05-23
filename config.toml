@@ -1,6 +1,7 @@
 defaultContentLanguage = 'en'
 pluralizeListTitles = false
-
+[author]
+  name = "Marcus Tellez"
 [languages]
   [languages.en]
     title = 'DevmentorLive'
