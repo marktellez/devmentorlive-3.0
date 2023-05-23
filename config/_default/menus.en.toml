@@ -42,16 +42,22 @@
   weight = 40
 
 [[main]]
+  identifier = "github"
+  pre = "github"
+  url = "https://github.com/marktellez"
+  weight = 60
+
+[[main]]
   identifier = "twitter"
   pre = "twitter"
   url = "https://twitter.com/devmentorlive"
-  weight = 60
+  weight = 65
 
 [[main]]
   identifier = "linkedin"
   pre = "linkedin"
   url = "https://www.linkedin.com/company/devmentorlive"
-  weight = 80
+  weight = 70
 
 
 # -- Footer Menu --
