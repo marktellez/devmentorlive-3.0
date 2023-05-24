@@ -108,6 +108,8 @@ disableImageZoom=true
 #  appId = "1:680287892153:web:f287c57a755828d18d2168"
 #  measurementId = "G-C91W302D5K"
 
+[googleAnalytics]
+  code = "G-LV2VD6FG5S"
 [fathomAnalytics]
   # site = "ABC12345"
   # domain = "llama.yoursite.com"

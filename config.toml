@@ -1,5 +1,6 @@
 defaultContentLanguage = 'en'
 pluralizeListTitles = false
+
 [author]
   name = "Marcus Tellez"
 [languages]
