@@ -1,0 +1,23 @@
+{{- $avatar := .avatar -}}
+{{- $name := .name -}}
+{{- $date := .date -}}
+{{- $text := .text -}}
+
+<div class="flex flex-col p-4 border rounded my-2 prose bg-neutral-100">
+    <div class="flex items-center gap-2">
+        <div class="rounded-full border w-12 h-12 flex items-center justify-center bg-gray-300">
+        {{ if eq (len $avatar) 1 }}
+            
+            <span class="text-4xl">{{ $avatar }}</span>
+   
+        {{ else }}
+            <img src="{{ $avatar }}" alt="5 star review by {{ $name }}" class="rounded-full w-12 h-12">
+        {{ end }}
+        </div>
+        <div class="p-1">
+            <div class="font-medium">{{ $name }}</div>
+            <div class="text-xs -mt-2">{{ $date }}</div>
+        </div>
+    </div>
+    <div class="mt-4  prose">{{ $text }}</div>
+</div>
