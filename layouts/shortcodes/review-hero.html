@@ -1,0 +1,25 @@
+<div class="md:flex gap-8">
+  <div class="md:w-1/3">
+    <figure>
+      <img class="my-0 rounded-full w-full" src="{{ .Get "imageSrc" }}" alt="{{ .Get "name" }}">
+      <a href="{{ .Get "linkTo" }}" target="_blank">
+        <figcaption class="text-center">
+          <div class="prose-invert text-3xl font-medium text-neutral-300">{{ .Get "name" }}</div>
+          <div class="prose-invert font-thin">{{ .Get "company" }}</div>
+        </figcaption>
+      </a>
+    </figure>
+  </div>
+
+  <div class="md:w-2/3">
+    <blockquote class="border-l-2 border-neutral-500">
+      {{ $paragraphs := split .Inner "\n" }}
+      {{ range $paragraphs }}
+        {{ $content := trim . " " }}
+        {{ if ne $content "" }}
+          <p class="prose-invert pl-8 max-w-lg text-lg font-light">{{ $content | markdownify }}</p>
+        {{ end }}
+      {{ end }}
+    </blockquote>
+  </div>
+</div>

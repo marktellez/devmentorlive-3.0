@@ -5,7 +5,7 @@
         {{ partial "icon.html" .Pre }}
     </span>
     {{ end }}
-    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="{{ .Title }}">
+    <p class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900" title="{{ .Title }}">
         {{ .Name | markdownify | emojify }}
     </p>
 </a>

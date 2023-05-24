@@ -57,29 +57,17 @@ description: "Get Mentored by an Expert Web Developer with 10 years experience i
   </a>
 </div>
 
-  
-<div class="bg-primary-500 bg-opacity-10   py-4 my-8">
-  <div class="mx-auto max-w-4xl text-center">
-    <h3 class="uppercase text-3xl font-bold tracking-tight  sm:text-4xl">I have mentored hundreds of programmers</h3>
-    <p class="mt-3 text-xl sm:mt-4">and I have spent years consulting as a Sr. Developer at companies like YouTube,
-      Twitter, and Uber.</p>
-  </div>
+{{< stats
+  heading="I have mentored over **_500_** programmers"
+  text="I have spent years consulting as a Sr. Developer at companies like YouTube, Twitter, and Uber, as well as hundreds of smaller clients that I valued just as much!"
+  stat1Label="years coding"
+  stat1Number="26"
+  stat2Label="students mentored"
+  stat2Number="500+"
+  stat3Label="5 star reviews"
+  stat3Number="400+"
+>}}
 
-  <dl class="my-10 text-center sm:mx-auto sm:grid sm:max-w-3xl sm:grid-cols-3 sm:gap-8">
-    <div class="flex flex-col">
-      <dt class="order-2 mt-2 text-lg font-medium leading-6">years coding</dt>
-      <dd class="order-1 text-5xl font-bold tracking-tight">26</dd>
-    </div>
-    <div class="flex flex-col">
-      <dt class="order-2 mt-2 text-lg font-medium leading-6">students mentored</dt>
-      <dd class="order-1 text-5xl font-bold tracking-tight">100+</dd>
-    </div>
-    <div class="flex flex-col">
-      <dt class="order-2 mt-2 text-lg font-medium leading-6">videos on youtube</dt>
-      <dd class="order-1 text-5xl font-bold tracking-tight">80+</dd>
-    </div>
-  </dl>
-</div>
 
 
 
@@ -88,7 +76,7 @@ description: "Get Mentored by an Expert Web Developer with 10 years experience i
     <div class="w-[400px] mx-auto ">
     <div class=" flex justify-center ">
       <a class="cursor-pointer" href="https://www.youtube.com/watch?v=lTLs0izq0hQ" target="_blank">
-        <img src="/intro.webp" class="max-h-[200px]" alt="Marcus Tellez - Expert ReactJS Mentor">
+        <img width="400px" height="249px" src="/intro.webp" class="max-h-[200px]" alt="Marcus Tellez - Expert ReactJS Mentor">
       </a>
     </div>
     <div class="flex items-center gap-3 justify-center w-full">
@@ -160,7 +148,7 @@ This is a **_custom learning experience_** based on **_expert mentorship_** and 
         </dt>
         <dd class="mt-2 sm:ml-10 text-base leading-7 prose dark:prose-invert text-neutral-400">Each session can be
           recorded
-          to be rewatched at a later time, creating your own screencast series.</dd>
+          to be rewatched at a later time, creating a screencast series all your own.</dd>
       </div>
     </dl>
   </div>
