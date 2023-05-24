@@ -23,7 +23,7 @@ default false)) (in .TableOfContents "<ul") }}
   class="prose mb-5 mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row"
 >
   {{ if .Content }}
-  <div class="min-h-0 min-w-0 max-w-prose">{{ .Content | emojify }}</div>
+  <div class="min-h-0 min-w-0">{{ .Content | emojify }}</div>
   {{ end }}
   <script>
     var oid = "views_term_{{ .Data.Term }}";

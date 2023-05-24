@@ -34,7 +34,7 @@ default false)) (in .TableOfContents "<ul") }}
     </div>
   </div>
   {{ end }}
-  <div class="min-h-0 min-w-0 max-w-prose">{{ .Content | emojify }}</div>
+  <div class="min-h-0 min-w-0">{{ .Content | emojify }}</div>
   <script>
     var oid = "views_{{ .File.Path }}";
     var oid_likes = "likes_{{ .File.Path }}";
