@@ -2057,6 +2057,10 @@ select {
   max-height: calc(100% - 64px);
 }
 
+.max-h-\[124px\] {
+  max-height: 124px;
+}
+
 .min-h-0 {
   min-height: 0px;
 }
