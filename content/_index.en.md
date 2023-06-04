@@ -5,27 +5,28 @@ summary: "JavaScript moves fast. So does web development, but with the help of a
 description: "Get Mentored by an Expert Web Developer with 10 years experience in mentoring aspiring developers."
 ---
 
-{{<lead>}}
-  **_Hello aspiring or working developer!_**
-  
-  My name is **_Marcus Tellez_**, and I am a **_Sr. Web Developer_** who is enthralled with using
-  **_Machine Learning_** to speed up my web development. And **_I can teach you how_**!
 
-  For a little over **_10 years_** I've been **_mentoring students and developers_** in their web development
-  aspirations.
-  {{</lead>}}
+<div class="md:flex gap-8 items-center">
+  
+  <div class="lead prose !mb-9 text-xl text-neutral-500 dark:prose-invert dark:text-neutral-400">
+    <p><strong><em>Hello aspiring or working developer!</em></strong></p>
+    <p>My name is <strong><em>Marcus Tellez</em></strong>, and I am a <strong><em>Sr. Web Developer</em></strong> who is enthralled with using
+    <strong><em>Machine Learning</em></strong> to speed up my web development. And <strong><em>I can teach you how</em></strong>!</p>
+    <p>For a little over <strong><em>10 years</em></strong> I’ve been <strong><em>mentoring students and developers</em></strong> in their web development aspirations.</p>
+  </div>
+  <div><img src="/headshot.png" alt="Marcus Tellez - Sr Developer and AI Researcher" /></div>
+</div>
 
 
 <h2 class="uppercase font-black">My Skill Expertise</h2>
 
 {{<lead>}}
-  My _specialties_ include **_JavaScript_**, **_NextJS_**, **_ReactJS_**, **_MongoDB_**, **_Prompt Engineeing_** and
-  **_Functional Programming_**.
+  My _specialties_ include **_JavaScript_**, **_NextJS_**, **_ReactJS_**, **_MongoDB_**, **Prompt Engineering**, and **Functional Programming**_**.
 
   You see, I've been **_writing JavaScript_** since way back in **_1997_**. I have a _passion_ for **_helping people_**
   and **_writing beautiful code_** and _prose_.
 
-  I would _**love**_ to be your _**secret weapon**_ in your journey to become a _**successful programmer**_ and to help
+  I would _**love**_ to be your _**secret weapon**_ in your journey to becoming a **successful** programmer**_ and to help
   you master the _craft_!
 {{</lead>}}
 
@@ -94,7 +95,7 @@ description: "Get Mentored by an Expert Web Developer with 10 years experience i
 {{<lead>}}
 Book your first session now. 
 
-I offer a **_money back guarantee_** on your first lesson if you aren't completely happy with my help.
+I offer a **_money-back guarantee_** on your first lesson if you aren't completely happy with my help.
 {{</lead>}}
 <div class="w-full flex justify-end">
       <button class="hover:scale-110 hover:bg-primary-500 transition duration-200  bg-primary-700 rounded px-4 py-2 w-full">
@@ -139,7 +140,7 @@ This is a **_custom learning experience_** based on **_expert mentorship_** and 
         </dt>
         <dd class="mt-2 sm:ml-10 text-base leading-7 prose dark:prose-invert text-neutral-400">We work one on one, side
           by
-          side, using <span class="italic font-bold">Zoom</span>. We build real world apps, not clones.</dd>
+          side, using <span class="italic font-bold">Zoom</span>. We build real-world apps, not clones.</dd>
       </div>
       <div class="relative">
         <dt>
